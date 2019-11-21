@@ -71,7 +71,8 @@ typedef struct Error {
 
 class EasyGraphs {
   public:
-    EasyGraphs(char* deviceToken, bool debug = DEBUG);
+    EasyGraphs(char* deviceToken = "", bool debug = DEBUG);
+    void setDeviceToken(char* deviceName);
     void setDeviceName(char* deviceName);
     void setDevicePlatform(char* devicePlatform);
     void setDeviceType(char* deviceType);
@@ -94,4 +95,5 @@ class EasyGraphs {
     HTTPClient http;
     Error error;
     void logDebug(String text);
+    uint32_t calculateCRC32( const uint8_t *data, size_t length );
 };
