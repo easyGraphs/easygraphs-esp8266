@@ -29,12 +29,12 @@ Created by Dmitrii Levin - Founder of EasyGraphs.io
 
 // EasyGraphs.io collections server api
 #ifndef API_SERVER
-#define API_SERVER "http://api.easygraphs.io"
+#define API_SERVER "api.easygraphs.io"
 #endif
 
 // EasyGraphs.io collections server port
 #ifndef API_SERVER_PORT
-#define API_SERVER_PORT 4020
+#define API_SERVER_PORT 80
 #endif
 
 // Default device name
